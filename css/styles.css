@@ -1,0 +1,47 @@
+
+
+#main-img{
+  width:70%;
+  border-radius:900px;
+  display:block;
+  max-width:200px;
+  margin-top:50px;
+}
+
+#content{
+  padding-left:20px;
+  padding-right:20px;
+}
+
+.center{
+  margin-left:auto;
+  margin-right:auto;
+  text-align:center;
+  display:block;
+}
+
+button{
+  width:80%;
+  height:50px;
+  border-radius:2px;
+}
+
+h1{
+  border-bottom:1px solid #ffffff;
+}
+
+p{
+  font-size:16pt;
+}
+
+a{
+  text-decoration:none;
+}
+
+.underline{
+  border-bottom:1px solid black;
+}
+
+.copyright{
+  font-size:10pt;
+}
