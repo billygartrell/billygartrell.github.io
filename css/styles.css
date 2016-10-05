@@ -31,7 +31,7 @@ h1{
 }
 
 p{
-  font-size:16pt;
+  font-size:16px;
 }
 
 a{
@@ -44,7 +44,7 @@ a{
 }
 
 .copyright{
-  font-size:10pt;
+  font-size:10px;
 }
 
 .z-depth-1, nav, .card-panel, .card, .toast, .btn, .btn-large, .btn-floating, .dropdown-content, .collapsible, .side-nav {
