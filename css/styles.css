@@ -13,11 +13,21 @@
   padding-right:20px;
 }
 
+#content-writing{
+  width:60%;
+  padding-left:100px;
+  padding-right:20px;
+}
+
 .center{
   margin-left:auto;
   margin-right:auto;
   text-align:center;
   display:block;
+}
+
+.left{
+  text-align:left;
 }
 
 button{
