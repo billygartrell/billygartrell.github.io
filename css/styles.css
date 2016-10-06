@@ -1,5 +1,7 @@
 
-
+body{
+  height:100%;
+}
 #main-img{
   width:70%;
   border-radius:900px;
