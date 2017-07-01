@@ -71,8 +71,13 @@ header{
   position: absolute;
   top: 50%;
   left: 50%;
+
   transform: translate(-50%, -50%); /* Note to self: look up "translate" more to bette understand this */
   -ms-transform: translate(-50%, -50%)
+}
+
+.project:hover .hover {
+  opacity: 1;
 }
 
 .projectName {
@@ -80,6 +85,11 @@ header{
   font-size: 16px;
   padding: 16px 32px;
 }
+
+/*.projectImage:hover{
+  width:46%;
+  height:205px;
+}*/
 
 .projectImage p{
   text-align:center;
@@ -120,6 +130,7 @@ header{
   -moz-transition: width .3s, height .3s, font-size .3s;
   -o-transition: width .3s, height .3s, font-size .3s;
   transition: width .3s, height .3s, font-size .3s;
+
 }
 
 #bodyText button:hover{
