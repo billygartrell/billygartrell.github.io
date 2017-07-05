@@ -2,6 +2,11 @@ html{
   box-sizing: border-box;
 }
 
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+
 body{
   font-family: Tenso, Helvetica, Arial, sans-serif;
   padding:0;
@@ -89,7 +94,6 @@ header{
   position: absolute;
   top: 50%;
   left: 50%;
-
   transform: translate(-50%, -50%); /* Note to self: look up "translate" more to bette understand this */
   -ms-transform: translate(-50%, -50%)
 }
@@ -101,7 +105,7 @@ header{
 .projectName {
   color: white;
   font-size: 16px;
-  padding: 16px 32px;
+  padding: 16px 12px;
 }
 
 /*.projectImage:hover{
@@ -162,4 +166,30 @@ footer{
   width:100%;
   float:left;
   text-align:center;
+}
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+  #wrapper{
+    width:900px;
+    padding:0px 15px;
+    margin-left: auto;
+    margin-right:auto;
+  }
+
+  /* Container for each individual project */
+  .project{
+    width:33%;
+    position:relative;
+    float:left;
+    /*outline:1px solid red; <-- Use this style for testing */
+  }
+
+  .projectName {
+    color: white;
+    font-size: 16px;
+    padding: 16px 12px;
+  }
 }
