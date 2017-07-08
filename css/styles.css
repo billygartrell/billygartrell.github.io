@@ -68,7 +68,7 @@ header{
 /* Container that surrounds the actual project image */
 .projectImage{
   height:200px;
-  background-color: pink;
+  background-color: #f39dac;
   box-sizing: border-box;
   margin:5px;
   opacity: 1;
@@ -77,6 +77,33 @@ header{
   backface-visibility: hidden;
 }
 
+#project2 .projectImage{
+  background-color:#ef95a4;
+}
+
+#project3 .projectImage{
+  background-color:#ec8d9d;
+}
+
+#project4 .projectImage{
+  background-color:#e78293;
+}
+
+#project5 .projectImage{
+  background-color:#e67c8e;
+}
+
+#project6 .projectImage{
+  background-color:#e27285;
+}
+
+#project7 .projectImage{
+  background-color:#e06a7e;
+}
+
+#project8 .projectImage{
+  background-color:#dc6378;
+}
 /* Controls the opacity of the hover color */
 .project:hover .projectImage {
   opacity: 0.6;
@@ -162,10 +189,14 @@ header{
 }
 
 footer{
+  font-family: roboto, sans-serif;
+  font-style: normal;
+  font-weight: 200;
   font-size:10pt;
   width:100%;
   float:left;
   text-align:center;
+  margin-top:30px;
 }
 
 }
@@ -191,5 +222,27 @@ footer{
     color: white;
     font-size: 16px;
     padding: 16px 12px;
+  }
+
+  /* Project Styles */
+
+  #rightCol{
+    width:33%;
+    float:right;
+  }
+
+  .projectDescription h3{
+    text-align:left;
+  }
+
+  #leftCol{
+    width:66%;
+  }
+
+  .projectSubImage{
+    background-color: pink;
+    height:300px;
+    margin-right:40px;
+    margin-bottom:15px;
   }
 }
