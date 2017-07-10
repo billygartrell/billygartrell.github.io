@@ -65,9 +65,13 @@ header{
   /*outline:1px solid red; <-- Use this style for testing */
 }
 
+.project img{
+  width:200px;
+}
+
 /* Container that surrounds the actual project image */
 .projectImage{
-  height:200px;
+  padding-bottom:75%;
   background-color: #f39dac;
   box-sizing: border-box;
   margin:5px;
@@ -249,10 +253,10 @@ footer{
 
 /* Large screens ----------- */
 @media only screen  and (min-width : 1824px) {
-  /*#wrapper{
-    width:1500px;
+  #wrapper{
+    width:1200px;
     padding:0px 15px;
     margin-left: auto;
     margin-right:auto;
-  }*/
+  }
 }
