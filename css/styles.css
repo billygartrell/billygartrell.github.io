@@ -74,7 +74,7 @@ header{
   padding-bottom:75%;
   background-color: #f39dac;
   box-sizing: border-box;
-  margin:5px;
+  margin:15px;
   opacity: 1;
   display: block;
   transition: .5s ease;
@@ -88,13 +88,13 @@ header{
 
 #project2 .projectImage{
   /*background-color:#ef95a4;*/
-  background-image:url("../img/illustration-project.jpg");
+  /*background-image:url("../img/illustration-project.jpg");*/
   background-size:100%;
 }
 
 #project3 .projectImage{
   /*background-color:#ec8d9d;*/
-  background-image:url("../img/oldbear-project.jpg");
+  /*background-image:url("../img/oldbear-project.jpg");*/
   background-size:100%;
 }
 
@@ -150,11 +150,16 @@ header{
   padding: 16px 12px;
 }
 
-/*.projectImage:hover{
-  width:46%;
-  height:205px;
-}*/
+#music{
+  width:100%;
+  display:inline-block;
+}
 
+#musicPlayers{
+  margin-left:auto;
+  margin-right:auto;
+  width:100%;
+}
 
 #bodyText{
   padding:20px;
@@ -204,7 +209,7 @@ footer{
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
   #wrapper{
-    width:900px;
+    width:1200px;
     padding:0px 15px;
     margin-left: auto;
     margin-right:auto;
@@ -218,6 +223,10 @@ footer{
     /*outline:1px solid red; <-- Use this style for testing */
   }
 
+  /*#project1{
+    width:66%;
+  }*/
+
   .projectName {
     font-size: 16px;
     padding: 16px 12px;
@@ -228,6 +237,11 @@ footer{
   #rightCol{
     width:33%;
     float:right;
+
+  }
+
+  #rightCol p{
+    font-size:16pt;
   }
 
   .projectDescription h3{
@@ -239,17 +253,21 @@ footer{
   }
 
   .projectSubImage{
-    background-color: pink;
-    height:300px;
-    margin-right:40px;
-    margin-bottom:15px;
+    padding-bottom:-5px;
+    background-color: #f39dac;
+    box-sizing: border-box;
+    margin:20px;
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
   }
 }
 
 /* Large screens ----------- */
 @media only screen  and (min-width : 1824px) {
   #wrapper{
-    width:1200px;
+    width:1600px;
     padding:0px 15px;
     margin-left: auto;
     margin-right:auto;
