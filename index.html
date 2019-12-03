@@ -1,36 +1,75 @@
-<!DOCTYPE html>
+<!doctype html>
+<html lang="en">
 <head>
-  <!--Typekit Embed-->
-  <script src="https://use.typekit.net/jfm7ktl.js"></script>
-  <script>try{Typekit.load({ async: true });}catch(e){}</script>
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Draggable - Snap to element or grid</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="css/styles.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="jquery.ui.touch-punch.min.js"></script>
 
-  <!--For mobile-->
-  <meta name=viewport content="width=device-width, initial-scale=1">
 </head>
-<html>
+
 <body>
-  <div id="wrapper">
-    <div id="index-header">
-      <h1><a href="index.html">Billy Gartrell</a></h1>
-      <h2>Creative Project Manager, Designer & Musician<br>
-        currently based in Lancaster, Pa.</h2><br>
-        <h3>Website under construction.</h3>
+
+  <audio id="music-example" controls style="display:none;">
+    <source src="music-example.wav" type="audio/wav">
+  </audio>
+
+  <div id="container">
+
+    <div id="interactive-container">
+
+      <div id="snaptargetcontainer">
+        <div id="snaptarget" class="ui-widget-header">
+        </div>
+
+        <div id="playbutton">
+        </div>
+
+      </div>
+
+      <div id="cassette" class="draggable ui-widget-content">
+        <div id="hole1" class="cassettehole">
+        </div>
+        <div id="hole2" class="cassettehole">
+        </div>
+      </div>
 
     </div>
 
-    <div id="social">
-      <div id="social-icons">
-        <a href="https://www.instagram.com/billygartrell/" target="_blank" title="Instagram"><img src="img/instagram.svg"></a>
-        <a href="https://twitter.com/billygartrell" target="_blank" title="Twitter"><img src="img/twitter.svg"></a>
-      </div>
-    </div> <!-- Closing social -->
-
-    <footer>
-      &copy; copyright 2017
-    </footer>
-</div> <!-- Closing Wrapper -->
+  </div>
 
 </body>
 </html>
+
+<script>
+$( function() {
+  $( "#cassette" ).draggable({ snap: ".ui-widget-header", snapMode: "inner" });
+} );
+
+
+$("#playbutton").click(function(){
+  var trayPosition = $("#snaptarget").offset();
+  var cassetteLock = $("#cassette").offset();
+
+  if (trayPosition.top == cassetteLock.top && trayPosition.left == cassetteLock.left){
+    if ($("#hole1").hasClass("spin")){
+      $(".cassettehole").removeClass("spin");
+      $( "#cassette" ).draggable( "enable" );
+      $("#music-example")[0].pause();
+
+    } else {
+      $(".cassettehole").addClass("spin");
+      $( "#cassette" ).draggable( "disable" );
+      $("#music-example")[0].play();
+
+    }
+  } else{
+    //Do nothing
+  }
+
+});
+</script>
