@@ -89,6 +89,14 @@ col{
     font-size:1.5vw;
 }
 
+.toggle{
+    text-decoration:underline;
+}
+
+.toggle:hover{
+    cursor: pointer;
+}
+
 .dark-mode {
     background-color:#000000;
     color:#ffffff;
