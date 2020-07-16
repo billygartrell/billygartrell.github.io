@@ -1,122 +1,95 @@
 body{
-  margin:0;
-  padding:0;
+    background-color: #EA8B9A;
+    background-image: url('../img/deer-red.png');
+    background-size:55%;
+    background-position:95% 5%;
+    background-repeat:no-repeat;
+    color:#D14430;
+    transition: background 1s;
 }
 
-#container{
-  width:100%;
-  margin:0;
-  padding:40px;
+h1{
+    font-family:'Barlow Condensed', sans-serif;
+    font-weight:900;
+    font-size:13vw;
+    text-transform:uppercase;
+    letter-spacing:8px;
+    line-height:1.0;
+    margin-top:5%;
 }
 
-#interactive-container{
-  margin:0 auto;
-  display:block;
-  width:50%;
+p {
+    font-size:2vw;
+    font-weight:400;
+    letter-spacing:.3em;
+    font-family: 'Barlow Condensed', sans-serif;
 }
 
-.draggable { }
-.ui-widget-header p, .ui-widget-content p {
-  margin: 0;
+.container{
+    margin-bottom:10px;
+    margin-left:2%;
+    margin-right:2%;
+    max-width:1920px;
 }
 
-#snaptarget {
-  position:relative;
-  height:200px;
-  width: 300px;
-  /* border:1px solid black; */
-  margin:0 auto;
-  top:250px;
+col{
+    margin:0;
+    padding:0;
 }
 
-#snaptargetcontainer {
-  height:595px;
-  width:380px;
-  /* border: 1px solid blue; */
-  background-image:url("../img/tape-player-background.jpg");
-  background-size:cover;
-  margin-bottom:30px;
+#switch-container{
+    position:relative;
+    text-align:right;
+    margin:0;
+    right:0%;
 }
 
-#cassette {
-  height:200px;
-  width: 300px;
-  background-image:url("../img/cassette-background.png");
-  background-size:cover;
-  /* border:1px solid red; */
+#switch-container a{
+    text-decoration:underline;
 }
 
-#playbutton {
-  position:relative;
-  top:318px;
-  left:40px;
-  /* border: 1px solid green; */
-  height: 70px;
-  width: 70px;
-  background-image:url("../img/play-button.png");
-  background-size:cover;
+.color-block{
+    background-color:#D14430;
+    display:block;
+    width:6vw;
+    height:30vw;
+    float:left;
 }
 
-.cassettehole {
-  height:40px;
-  width: 40px;
-  /* border:1px solid red; */
+#box-content p{
+   text-align:center;
+   font-family:Arial, Helvetica, sans-serif;
+   letter-spacing:1px;
+   text-decoration:underline;
+   /* border:2px solid #D14430; */
 }
 
-.spin{
-  -webkit-animation-name: spin;
-  -webkit-animation-duration: 4000ms;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-  -moz-animation-name: spin;
-  -moz-animation-duration: 4000ms;
-  -moz-animation-iteration-count: infinite;
-  -moz-animation-timing-function: linear;
-  -ms-animation-name: spin;
-  -ms-animation-duration: 4000ms;
-  -ms-animation-iteration-count: infinite;
-  -ms-animation-timing-function: linear;
+.sideways-block{
+    float:left;
+    display:block;
+    margin-left:3%;
+    margin-top:0vw;
 
-  animation-name: spin;
-  animation-duration: 4000ms;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  }
-  @-ms-keyframes spin {
-  from { -ms-transform: rotate(0deg); }
-  to { -ms-transform: rotate(360deg); }
-  }
-  @-moz-keyframes spin {
-  from { -moz-transform: rotate(0deg); }
-  to { -moz-transform: rotate(360deg); }
-  }
-  @-webkit-keyframes spin {
-  from { -webkit-transform: rotate(0deg); }
-  to { -webkit-transform: rotate(360deg); }
-  }
-  @keyframes spin {
-  from {
-      transform:rotate(0deg);
-  }
-  to {
-      transform:rotate(360deg);
-  }
+    /* 
+    Styles to turn text sideways
+
+    position:relative;
+    top:-34%;
+    left:0%;
+    transform-origin: bottom left;
+    -webkit-transform:rotate(90deg);
+       -moz-transform:rotate(10deg);
+         -o-transform:rotate(10deg);  
+    */
+    
 }
 
-#hole1 {
-  position: relative;
-  top: 81px;
-  left: 56px;
-  float:left;
-  background-image:url("../img/left-hole.png");
-  background-size:cover;
+.sideways-block p{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:1.5vw;
 }
 
-#hole2 {
-  position: relative;
-  top: 83px;
-  left: 165px;
-  float:left;
-  background-image:url("../img/right-hole.png");
-  background-size:cover;
+.dark-mode {
+    background-color:#000000;
+    color:#ffffff;
 }
